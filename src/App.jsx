@@ -14,7 +14,7 @@ function App() {
   const [constituencyID, setConstituencyID] = useState({name:undefined, id:undefined })
 
   return (
-    <div className="h-[100%] w-screen bg-gradient-to-tl from-slate-400 via-gray-300 to-slate-200">
+    <div className="h-[100%] w-screen bg-gradient-to-tl from-slate-400 via-gray-300 to-slate-200 font-[calibri]">
 
 
 {constituencyID.id > 0 ?
