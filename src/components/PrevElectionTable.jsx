@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 
 
-const PrevElectionResults = ({constituencyID}) => {
+const PrevElectionTable = ({constituencyID}) => {
 
 
 const [electionResults, setElectionResults] = useState([])
@@ -80,7 +80,7 @@ useEffect(() => {
     };
 
 
-export default PrevElectionResults
+export default PrevElectionTable
 
 
 
