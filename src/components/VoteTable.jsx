@@ -12,7 +12,7 @@ setSortedData(sortedData)
 }, [candidates])
 
 return (
-<div className="bg-white shadow-lg rounded-lg overflow-x-auto mr-2 w-[580px] ">
+<div className="bg-white shadow-lg rounded-lg overflow-x-auto mr-2 md:w-[580px] ">
         <table className="whitespace-nowrap w-[100%]">
           <thead>
             <tr className="bg-gradient-to-tl from-emerald-700 via-emerald-800 to-emerald-900  text-white text-left font-bold">

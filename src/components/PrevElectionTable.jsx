@@ -25,8 +25,8 @@ useEffect(() => {
       };
     
       return (
-        <div className="bg-white shadow-lg rounded-lg ml-4">
-        <table className=" divide-y divide-gray-200 border- rounded-lg">
+        <div className="bg-white shadow-lg rounded-lg md:ml-4 overflow-x-auto w-screen md:w-[50%]">
+        <table className="w-screen md:w-full divide-y divide-gray-200 border- rounded-lg">
           <thead className="">
             <tr className="bg-gradient-to-tl from-emerald-700 via-emerald-800 to-emerald-900  text-gray-600 text-left rounded-lg">
               <th className="px-6 py-3 text-left font-bold text-white tracking-wider">

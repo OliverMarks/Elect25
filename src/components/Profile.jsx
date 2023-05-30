@@ -32,7 +32,7 @@ useEffect(() => {
   return (
 
     <div className=" flex flex-col justify-center items-center p-1 ml-3 rounded-lg  bg-white">
-        <div className="h-32 w-32">
+        <div className="md:h-32 md:w-32">
            <img src={profile.image} className="rounded-lg" />
         </div>
         <h2 className="font-black text-slate-600">{profile.name}</h2>

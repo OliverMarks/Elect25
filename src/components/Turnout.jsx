@@ -38,9 +38,9 @@ const Turnout = ({constituencyID}) => {
       };
     
       return (
-        <div className="border-4 border-emerald-900 rounded-lg  w-1/5  shadow-xl ml-10 bg-white">
+        <div className="border-4 border-emerald-900 rounded-lg  md:w-1/5  shadow-xl md:ml-10 bg-white">
           <h2 className="text-xl font-bold flex justify-center mb-4 bg-gradient-to-tl from-emerald-700 via-emerald-800 to-emerald-900  text-white p-4">Turnout</h2>
-          <div className='flex justify-center items-center flex-col mt-14'>
+          <div className='flex justify-center items-center flex-col md:mt-14'>
           <div className={`border-8 w-32 h-32 rounded-full flex items-center justify-center ${getCircleColor()}`}>
             <span className="text-slate-500 text-3xl font-bold">{getTurnoutPercentage()}%</span>
           </div>

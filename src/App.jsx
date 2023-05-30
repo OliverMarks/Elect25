@@ -31,7 +31,7 @@ function App() {
     
     
       {/* Constituency heading and profile  */}
-    <div className='pl-20 flex'>
+    <div className='md:pl-20 px-1 flex'>
     {constituencyID.id > 0 ?
     <TitleSection 
       constituencyID = {constituencyID} /> : null}
@@ -39,7 +39,7 @@ function App() {
 
 
 
-      <div className='md:pl-20 pl-2'>
+      <div className='md:pl-20'>
     {constituencyID.id > 0  ? <PrevResults
     constituencyID = {constituencyID}/>
     : <Welcome

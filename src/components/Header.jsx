@@ -28,10 +28,10 @@ const Header = ({constituencyID, setConstituencyID, prevSelectedConstituencies, 
 
 return (
 
-    <div className='h-28 w-screen bg-gradient-to-tl from-emerald-700 via-emerald-800 to-emerald-900 flex justify-center items-center flex-col pl-20'>
+    <div className='h-28 w-screen bg-gradient-to-tl from-emerald-700 via-emerald-800 to-emerald-900 flex justify-center items-center flex-col md:pl-20'>
     
     
-    <h1 className='text-white font-semibold  flex text-6xl'>UK Election Dash</h1>
+    <h1 className='text-white font-semibold  flex md:text-6xl'>UK Election Dash</h1>
     
     
 <div className=" flex flex-row flex-wrap gap-6">
@@ -42,9 +42,9 @@ return (
     setPrevSelectedConstituencies={setPrevSelectedConstituencies}
     />
 
-    <ul className="text-white  inline-flex mb-1 gap-4 ">
+    <ul className="text-white  inline-flex mb-1 gap-4 overflow-x ">
             {prevSelectedConstituencies.map((constituency) => (
-              <li className="bg-gray-400 rounded-xl px-2 cursor-pointer"
+              <li className="bg-gray-400 rounded-xl px-2 cursor-pointer text-xs md:text-lg"
               key={constituency.id} onClick={() => handleSelectFromList(constituency) }>
                 {constituency.name}
                 <span className="ml-2 hover:bg-slate-200 text-black p-1 h-2 w-2 rounded-full"

@@ -38,12 +38,12 @@ return (
 <div className='flex flex-col'>
   <h1 className='text-[48px] mr-4 text-emerald-900 underline underline-offset-8'>{constituencyID.name}</h1>
 
-    <div className='mt-6 mb-6 flex'>
+    <div className='flex flex-col mt-6 mb-6 md:flex-row'>
 
-    <div className='border-emerald-900 border-4 p-4 flex w-2/5 rounded-lg ml-14 shadow-lg bg-white'>
+    <div className=' w-screen md:w-2/5 mb-2 px-2 border-emerald-900 border-4 p-4 flex rounded-lg md:ml-14 shadow-lg bg-white'>
         <Profile 
         constituencyID = {constituencyID} />
-                <p className='mt-6 ml-2 text-[23px] text-slate-600'>{synopsis}</p>
+                <p className='mt-6 ml-2 md:text-[23px] text-slate-600'>{synopsis}</p>
 
          </div>
         <PrevElectionTable

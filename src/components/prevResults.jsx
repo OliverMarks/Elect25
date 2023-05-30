@@ -74,7 +74,7 @@ const PrevResults = ({constituencyID}) => {
     <div className="pb-5">
       <h2 className="text-[32px] mb-4 text-emerald-900">Election Results 2019</h2>
 
-<div className="flex ml-14 gap-2 ">
+<div className="flex flex-col md:flex md:flex-row md:ml-14 gap-2 ">
 
 
         <VoteTable
