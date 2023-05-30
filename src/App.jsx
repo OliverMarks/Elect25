@@ -13,6 +13,10 @@ function App() {
 
   const [constituencyID, setConstituencyID] = useState({name:undefined, id:undefined })
 
+  const [prevSelectedConstituencies, setPrevSelectedConstituencies] = useState([])
+
+  
+
   return (
     <div className="h-[100%] w-screen bg-gradient-to-tl from-slate-400 via-gray-300 to-slate-200 font-[calibri]">
 
@@ -20,7 +24,10 @@ function App() {
 {constituencyID.id > 0 ?
     <Header
     constituencyID={constituencyID}
-    setConstituencyID={setConstituencyID}/> :null }
+    setConstituencyID={setConstituencyID}
+    prevSelectedConstituencies={prevSelectedConstituencies}
+    setPrevSelectedConstituencies={setPrevSelectedConstituencies}
+    /> :null }
     
     
       {/* Constituency heading and profile  */}
@@ -37,7 +44,9 @@ function App() {
     constituencyID = {constituencyID}/>
     : <Welcome
     constituencyID={constituencyID}
-    setConstituencyID={setConstituencyID}/>}
+    setConstituencyID={setConstituencyID}
+    prevSelectedConstituencies={prevSelectedConstituencies}
+    setPrevSelectedConstituencies={setPrevSelectedConstituencies}/>}
       </div>
 
 

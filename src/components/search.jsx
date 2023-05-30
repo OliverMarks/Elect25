@@ -4,7 +4,7 @@ import '../App.css'
 
 
 
-const Search = ({constituencyID, setConstituencyID}) => {
+const Search = ({constituencyID, setConstituencyID, prevSelectedConstituencies, setPrevSelectedConstituencies}) => {
   
   const [searchTerm, setSearchTerm] = useState("")
   const [searchResults, setSearchResults] = useState([])
@@ -36,6 +36,10 @@ const Search = ({constituencyID, setConstituencyID}) => {
       name: constituency.name,
       id: constituency.id
     })
+    setPrevSelectedConstituencies((prev) => [...prev, 
+      {name: constituency.name,
+      id: constituency.id} ])
+      
     setSearchTerm(constituency.name)
     setSearchResults([])
   }

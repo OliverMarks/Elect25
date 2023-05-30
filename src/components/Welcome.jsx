@@ -5,7 +5,7 @@ import Search from "./search";
 
 
 
-const Welcome = ({constituencyID, setConstituencyID}) => {
+const Welcome = ({constituencyID, setConstituencyID, prevSelectedConstituencies, setPrevSelectedConstituencies}) => {
 
 
 return (
@@ -25,7 +25,9 @@ return (
     <div className="my-8">
     <Search
     constituencyID={constituencyID}
-    setConstituencyID={setConstituencyID}/>
+    setConstituencyID={setConstituencyID}
+    prevSelectedConstituencies={prevSelectedConstituencies}
+    setPrevSelectedConstituencies={setPrevSelectedConstituencies}/>
     </div>
     </div>
 
