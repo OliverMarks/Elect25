@@ -31,18 +31,26 @@ const Search = ({constituencyID, setConstituencyID, prevSelectedConstituencies, 
 
   
 
-  function handleSelectConstituency (constituency) {
-    setConstituencyID({
-      name: constituency.name,
-      id: constituency.id
-    })
-    setPrevSelectedConstituencies((prev) => [...prev, 
-      {name: constituency.name,
-      id: constituency.id} ])
-      
-    setSearchTerm(constituency.name)
-    setSearchResults([])
-  }
+function handleSelectConstituency(constituency) {
+  setConstituencyID({
+    name: constituency.name,
+    id: constituency.id
+  });
+
+  setPrevSelectedConstituencies((prev) => {
+    // Check if the constituency already exists in prevSelectedConstituencies
+    const exists = prev.some((item) => item.name === constituency.name);
+
+    if (!exists) {
+      return [...prev, { name: constituency.name, id: constituency.id }];
+    } else {
+      return prev; // Return the previous state without adding the duplicate constituency
+    }
+  });
+
+  setSearchTerm(constituency.name);
+  setSearchResults([]);
+}
 
 
  
