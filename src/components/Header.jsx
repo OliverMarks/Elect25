@@ -42,7 +42,7 @@ return (
     setPrevSelectedConstituencies={setPrevSelectedConstituencies}
     />
 
-    <ul className="text-white  inline-flex mb-1 gap-4 overflow-x ">
+    <ul className="text-white inline-flex mb-1 gap-4 overflow-x-auto  ">
             {prevSelectedConstituencies.map((constituency) => (
               <li className="bg-gray-400 rounded-xl px-2 cursor-pointer text-xs md:text-lg"
               key={constituency.id} onClick={() => handleSelectFromList(constituency) }>
