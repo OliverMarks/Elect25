@@ -36,7 +36,7 @@ function handleSelectConstituency(constituency) {
     name: constituency.name,
     id: constituency.id
   });
-
+if (prevSelectedConstituencies.length < 5) {
   setPrevSelectedConstituencies((prev) => {
     // Check if the constituency already exists in prevSelectedConstituencies
     const exists = prev.some((item) => item.name === constituency.name);
@@ -47,7 +47,7 @@ function handleSelectConstituency(constituency) {
       return prev; // Return the previous state without adding the duplicate constituency
     }
   });
-
+}
   setSearchTerm(constituency.name);
   setSearchResults([]);
 }
